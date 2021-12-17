@@ -1,0 +1,254 @@
+* {
+    margin:0; padding:0;
+  }
+  header {
+    background-color: rgb(3, 58, 58);
+    height: 100px;
+    width: 100vw;
+    margin: 0 auto;
+    font-family:'Caveat', cursive;
+    color:rgb(252, 216, 17);
+  }
+  header a{
+    font-family:'Caveat', cursive;
+      color:rgb(252, 216, 17);
+      font-size:25px;
+  }
+
+
+  header .headline{
+    font-size: 40px;
+    float:left;
+    margin-left:30px;
+    padding-top:20px;
+  }
+ .nav-list{
+   display: flex;
+ }
+  .nav-list-item {
+    margin: 10px 20px;
+    list-style:none;
+  }
+
+ 
+.main{
+  height:765px;
+}
+
+.pic{
+    width:100vw;
+    height:765px;
+    background-image: url(img/background.png);
+    background-size:cover;
+    max-height: 765px;
+    background-repeat: no-repeat;
+    background-blend-mode:lighten;
+    position:absolute;
+    opacity:0.6;
+}
+    
+.tex{
+    position:relative;
+    top:220px;
+    font-size: 150px;
+    text-align: center;
+    font-family:'Caveat', cursive;
+    color: rgb(3, 58, 58);
+}
+
+.profile{
+  padding:30px;
+  padding-bottom:50px;
+  background-color:rgb(3, 58, 58);
+}
+
+.name{
+  font-size: 70px;
+  font-family:'Caveat', cursive;
+  color: rgb(252, 216, 17);
+}
+
+.space{
+    border-radius: 50%;
+    width:330px;
+    float:left;
+    margin:50px 50px 100px 80px;
+}
+
+.intro{
+      margin-bottom: 20px;
+      background: linear-gradient(transparent 70%, #0093D0 0%);
+      display: inline-block;
+      font-size: 55px;
+      font-family:'Caveat', cursive;
+      text-align:center;
+      color:rgb(252, 216, 17);
+}
+
+.hobby{
+  display: flex;
+  color:white;
+  padding-top:10px;
+  font-size:30px;
+  font-family:'Caveat', cursive;
+}
+
+
+
+
+
+.sub img{
+  width: 200px;
+  height: 200px;
+  padding:10px;
+
+}
+
+.quo{
+  background-color:rgb(252, 216, 17);
+  float:left;
+  width:25%;
+  height:400px;
+
+}
+
+.quo h3,h5{
+  color:rgb(3, 58, 58);
+  margin:10px;
+  font-family:"Nico Moji";
+}
+
+.quo h3{
+  border-bottom:2px solid cornflowerblue ;
+}
+
+
+
+.wants{
+  float:left;
+  width:100%;
+}
+
+
+.animation {
+	background-color:rgb(3, 58, 58);
+	position: relative;
+}
+
+.animation  img {
+  z-index:10;
+	width: 60%;
+  height:max-content;
+  animation-name: album;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	opacity: 0;
+}
+
+.animation h2{
+  z-index:10;
+  animation-name: album;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	opacity: 0;
+}
+
+
+.animation  .bike{
+  position: relative;
+  top:0;
+	left: 21%;
+  width:76%;
+}
+
+.animation  .forest {
+  animation-delay:5s;
+	position: absolute;
+	top: 0;
+	left: 25%;
+  
+}
+
+.animation  .world {
+  animation-delay:10s;
+	position: absolute;
+	top: 0;
+	left: 25%;
+}
+
+.animation  .europe {
+  animation-delay:15s;
+	position: absolute;
+	top: 0;
+	left: 25%;
+}
+
+@keyframes album {
+	0% {
+		opacity: 0;
+	}
+
+  12.5%{
+    opacity:1;
+  }
+  
+  25%{
+    opacity: 1;
+  }
+
+  37.5%{
+    opacity: 0;
+    z-index: 9;
+  }
+
+}
+
+
+
+
+
+
+
+.works{
+}
+
+.works img{
+  width: 200px;
+  height: 200px;
+  padding:20px;
+}
+
+.work{
+  background-color:rgb(252, 216, 17);
+  float:left;
+  width:33%;
+  height:300px;
+}
+
+.work h3{
+  margin-left:30px;
+  font-family:'Caveat', cursive;
+  color: rgb(3, 58, 58);
+  font-size:30px;
+  background: linear-gradient(transparent 60%, #ffa500 0%);
+}
+
+
+footer{
+  width: 100%;
+  height: 100px;
+  float:left;
+  font-size:20px;
+  font-family:'Caveat', cursive;
+  background-color:rgb(3, 58, 58);
+  color: rgb(252, 216, 17);
+  text-align: center;
+}
+
+footer a{
+  color: rgb(252, 216, 17);
+}
+
+ul.footer-menu li {
+display: inline;
+}
