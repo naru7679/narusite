@@ -1,5 +1,6 @@
 * {
     margin:0; padding:0;
+    box-sizing:border-box;
   }
   header {
     background-color: rgb(3, 58, 58);
@@ -101,7 +102,7 @@
   width: 200px;
   height: 200px;
   padding:10px;
-
+  display:flex;
 }
 
 .quo{
@@ -109,97 +110,108 @@
   float:left;
   width:25%;
   height:400px;
-
 }
 
 .quo h3,h5{
   color:rgb(3, 58, 58);
-  margin:10px;
+  padding:10px;
   font-family:"Nico Moji";
 }
 
 .quo h3{
   border-bottom:2px solid cornflowerblue ;
+  height:35px;
 }
 
-
-
-.wants{
-  float:left;
-  width:100%;
-}
 
 
 .animation {
-	background-color:rgb(3, 58, 58);
-	position: relative;
+   background-color:rgb(3, 58, 58);
+  height:400px;
+  position: relative;
+  margin-top: 400px;
 }
 
 .animation  img {
-  z-index:10;
-	width: 60%;
-  height:max-content;
-  animation-name: album;
-	animation-duration: 20s;
-	animation-iteration-count: infinite;
-	opacity: 0;
+margin:0 auto;
+width: 500px;
+height:350px;
 }
 
 .animation h2{
-  z-index:10;
-  animation-name: album;
-	animation-duration: 20s;
-	animation-iteration-count: infinite;
-	opacity: 0;
+text-align: center;
+font-family:"Nico Moji";
+color:rgb(252, 216, 17);
 }
 
 
-.animation  .bike{
-  position: relative;
-  top:0;
-	left: 21%;
-  width:76%;
+
+
+.bike{
+  position:absolute;
+  top: 0;
+  left:25%;
+     animation-name: album;
+     animation-duration: 16s;
+     animation-iteration-count: infinite;
+     opacity: 0;
 }
 
-.animation  .forest {
-  animation-delay:5s;
-	position: absolute;
-	top: 0;
-	left: 25%;
-  
+.forest {
+   position: absolute;
+   top: 0;
+   left: 25%;
+     animation-name: album;
+   animation-duration: 16s;
+   animation-delay: 4s;
+   animation-iteration-count: infinite;
+   opacity: 0;
 }
 
-.animation  .world {
-  animation-delay:10s;
-	position: absolute;
-	top: 0;
-	left: 25%;
+.world {
+   position: absolute;
+   top: 0;
+   left: 25%;
+     animation-name: album;
+     animation-duration: 16s;
+     animation-delay: 8s;
+     animation-iteration-count: infinite;
+     opacity: 0;
 }
 
-.animation  .europe {
-  animation-delay:15s;
-	position: absolute;
-	top: 0;
-	left: 25%;
+.europe {
+   position: absolute;
+   top: 0;
+   left: 25%;
+     animation-name: album;
+   animation-duration: 16s;
+   animation-delay: 12s;
+   animation-iteration-count: infinite;
+   opacity: 0;
 }
+
+
+
 
 @keyframes album {
-	0% {
-		opacity: 0;
-	}
 
-  12.5%{
-    opacity:1;
-  }
-  
-  25%{
-    opacity: 1;
-  }
+ 0% {
+   opacity: 0;
+   }
+ 
+ 25%{
+   opacity: 1;
+ }
 
-  37.5%{
-    opacity: 0;
-    z-index: 9;
-  }
+
+ 50%{
+   opacity: 0;
+ }
+
+
+ 75%{
+     opacity:0;
+   }
 
 }
 
@@ -208,31 +220,50 @@
 
 
 
-
-.works{
-}
 
 .works img{
   width: 200px;
   height: 200px;
-  padding:20px;
+  margin:20px;
+  position:relative;
+  top:-20px;
+  left:-20px;
+  margin-bottom: 0px;
+}
+
+.hov{
+  background-color: rgb(3, 58, 58);
+  width: 200px;
+  height: 200px;
+  margin:20px;
+  position:absolute;
+  margin-bottom:0px;
 }
 
 .work{
   background-color:rgb(252, 216, 17);
   float:left;
-  width:33%;
+  width:33.3333333%;
   height:300px;
 }
 
 .work h3{
   margin-left:30px;
+  margin-top: 230px;
   font-family:'Caveat', cursive;
   color: rgb(3, 58, 58);
   font-size:30px;
   background: linear-gradient(transparent 60%, #ffa500 0%);
 }
 
+.works img:hover{
+  opacity:0.3;
+}
+
+.add{
+  color:rgb(252, 216, 17);
+  background-color: rgb(252, 216, 17);
+}
 
 footer{
   width: 100%;
@@ -251,4 +282,80 @@ footer a{
 
 ul.footer-menu li {
 display: inline;
+}
+
+@media (max-width:1000px ){
+ *{
+   width:100%;
+   box-sizing:border-box;
+ }
+
+ header{
+   height:120px;
+ }
+
+ .animation{
+   height:300px;
+ }
+
+ .animation img{
+   height:250px;
+   width:400px;
+   margin: left 100pv;
+ }
+
+ .animation h2{
+   text-align: left;
+ }
+}
+
+@media (max-width:670px ){
+  *{
+    width:100%;
+    box-sizing:border-box;
+  }
+
+  .quo h3{
+    font-size: 17px;
+  }
+
+  .sub{
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .quo{
+    flex:auto;
+    width: 50%;
+  }
+
+  .animation{
+    margin-top: 0;
+  }
+
+  .works{
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+  .work{    
+    flex: auto;
+    width:100%;
+    padding-left: 100px;
+  }
+
+  .work h3{
+    margin-top: 270px;
+    background: linear-gradient(transparent 50%, #ffa500 0%);
+  }
+
+  .work img{
+    width:300px;
+    height:250px;
+  }
+
+  .hov{
+    width:300px;
+    height:250px;
+  }
 }
